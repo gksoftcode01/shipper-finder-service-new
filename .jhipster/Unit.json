@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20250224190642"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameFr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameDe",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameUrdu",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Unit",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20250224190648"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "msg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fromUserEncId",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "toUserEncId",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "cargoRequestId",
+      "fieldType": "Long"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "CargoMsg",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

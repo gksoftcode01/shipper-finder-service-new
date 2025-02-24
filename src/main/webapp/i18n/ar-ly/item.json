@@ -1,0 +1,32 @@
+{
+  "shipperFinderApp": {
+    "item": {
+      "home": {
+        "title": "Items",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Item جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Item",
+        "notFound": "لم يتم العثور على Items"
+      },
+      "created": "Item جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "Item تم تحديثه بالمعرف { param }",
+      "deleted": "Item تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Item { id }؟"
+      },
+      "detail": {
+        "title": "Item"
+      },
+      "id": "ID",
+      "name": "Name",
+      "nameEn": "Name En",
+      "nameAr": "Name Ar",
+      "nameFr": "Name Fr",
+      "nameDe": "Name De",
+      "nameUrdu": "Name Urdu",
+      "isActive": "Is Active",
+      "defaultUOM": "Default UOM",
+      "itemType": "Item Type"
+    }
+  }
+}

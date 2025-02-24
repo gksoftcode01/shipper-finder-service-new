@@ -1,0 +1,27 @@
+{
+  "shipperFinderApp": {
+    "tripMsg": {
+      "home": {
+        "title": "Trip Msgs",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Trip Msg جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Trip Msg",
+        "notFound": "لم يتم العثور على Trip Msgs"
+      },
+      "created": "Trip Msg جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "Trip Msg تم تحديثه بالمعرف { param }",
+      "deleted": "Trip Msg تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Trip Msg { id }؟"
+      },
+      "detail": {
+        "title": "Trip Msg"
+      },
+      "id": "ID",
+      "msg": "Msg",
+      "fromUserEncId": "From User Enc Id",
+      "toUserEncId": "To User Enc Id",
+      "tripId": "Trip Id"
+    }
+  }
+}
