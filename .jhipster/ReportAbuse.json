@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20250224190630"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "reportByEncId",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "reportedAgainstEncId",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "reportDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "reportData",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reportStatus",
+      "fieldType": "ReportStatus",
+      "fieldValues": "NEW,UNDER_PROCESS,COMPLETED"
+    }
+  ],
+  "name": "ReportAbuse",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

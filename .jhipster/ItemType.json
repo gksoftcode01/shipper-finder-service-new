@@ -1,0 +1,44 @@
+{
+  "annotations": {
+    "changelogDate": "20250224190632"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameFr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameDe",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameUrdu",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "ItemType",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

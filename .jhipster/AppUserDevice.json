@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20250224190635"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "deviceCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notificationToken",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastLogin",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "userEncId",
+      "fieldType": "UUID"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "AppUserDevice",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,13 @@
+{
+  "shipperFinderApp": {
+    "CargoRequestStatus": {
+      "null": "",
+      "NEW": "NEW",
+      "PENDING": "PENDING",
+      "CANCELLED": "CANCELLED",
+      "PUBLISHED": "PUBLISHED",
+      "REJECTED": "REJECTED",
+      "COMPLETED": "COMPLETED"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20250224190638"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "fromDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "toDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "subscribedUserEncId",
+      "fieldType": "UUID"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "UserSubscribe",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityField": "type",
+      "otherEntityName": "subscribeType",
+      "relationshipName": "subscribeType",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
