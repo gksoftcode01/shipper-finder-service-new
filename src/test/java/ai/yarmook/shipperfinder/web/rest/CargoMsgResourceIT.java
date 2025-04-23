@@ -567,6 +567,8 @@ class CargoMsgResourceIT {
         CargoMsg partialUpdatedCargoMsg = new CargoMsg();
         partialUpdatedCargoMsg.setId(cargoMsg.getId());
 
+        partialUpdatedCargoMsg.msg(UPDATED_MSG).fromUserEncId(UPDATED_FROM_USER_ENC_ID).toUserEncId(UPDATED_TO_USER_ENC_ID);
+
         restCargoMsgMockMvc
             .perform(
                 patch(ENTITY_API_URL_ID, partialUpdatedCargoMsg.getId())

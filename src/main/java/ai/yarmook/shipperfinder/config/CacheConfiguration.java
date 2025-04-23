@@ -78,6 +78,7 @@ public class CacheConfiguration {
             createCache(cm, ai.yarmook.shipperfinder.domain.ShowNumberHistory.class.getName());
             createCache(cm, ai.yarmook.shipperfinder.domain.TripMsg.class.getName());
             createCache(cm, ai.yarmook.shipperfinder.domain.CargoMsg.class.getName());
+            createCache(cm, ai.yarmook.shipperfinder.domain.OtpLog.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

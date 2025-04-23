@@ -135,12 +135,10 @@ describe('Service Tests', () => {
 
       it('should partial update a AppUser', async () => {
         const patchObject = {
-          registerDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
+          birthDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
+          gender: 'BBBBBB',
           mobileNumber: 'BBBBBB',
-          fullName: 'BBBBBB',
           userId: 1,
-          firstName: 'BBBBBB',
-          encId: 'BBBBBB',
           ...new AppUser(),
         };
         const returnedFromService = Object.assign(patchObject, elemDefault);

@@ -125,13 +125,11 @@ describe('Service Tests', () => {
       it('should partial update a SubscribeType', async () => {
         const patchObject = {
           type: 'BBBBBB',
-          nameAr: 'BBBBBB',
+          nameEn: 'BBBBBB',
           nameFr: 'BBBBBB',
           nameUrdu: 'BBBBBB',
-          details: 'BBBBBB',
           detailsEn: 'BBBBBB',
-          detailsAr: 'BBBBBB',
-          detailsDe: 'BBBBBB',
+          detailsFr: 'BBBBBB',
           detailsUrdu: 'BBBBBB',
           ...new SubscribeType(),
         };

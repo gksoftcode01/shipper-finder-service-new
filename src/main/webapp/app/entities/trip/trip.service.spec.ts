@@ -122,11 +122,10 @@ describe('Service Tests', () => {
 
       it('should partial update a Trip', async () => {
         const patchObject = {
-          tripDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
-          maxWeight: 1,
+          arriveDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
           notes: 'BBBBBB',
-          createDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
           isNegotiate: true,
+          status: 'BBBBBB',
           ...new Trip(),
         };
         const returnedFromService = Object.assign(patchObject, elemDefault);

@@ -314,7 +314,7 @@ class UserRateResourceIT {
         UserRate partialUpdatedUserRate = new UserRate();
         partialUpdatedUserRate.setId(userRate.getId());
 
-        partialUpdatedUserRate.rateDate(UPDATED_RATE_DATE).ratedByEncId(UPDATED_RATED_BY_ENC_ID);
+        partialUpdatedUserRate.rate(UPDATED_RATE).note(UPDATED_NOTE).rateDate(UPDATED_RATE_DATE).ratedByEncId(UPDATED_RATED_BY_ENC_ID);
 
         restUserRateMockMvc
             .perform(

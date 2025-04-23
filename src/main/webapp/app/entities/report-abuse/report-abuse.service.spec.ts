@@ -107,10 +107,8 @@ describe('Service Tests', () => {
 
       it('should partial update a ReportAbuse', async () => {
         const patchObject = {
-          reportByEncId: 'BBBBBB',
           reportedAgainstEncId: 'BBBBBB',
           reportDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
-          reportData: 'BBBBBB',
           reportStatus: 'BBBBBB',
           ...new ReportAbuse(),
         };

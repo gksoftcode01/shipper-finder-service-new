@@ -346,7 +346,7 @@ class SubscribeTypeDetailResourceIT {
         SubscribeTypeDetail partialUpdatedSubscribeTypeDetail = new SubscribeTypeDetail();
         partialUpdatedSubscribeTypeDetail.setId(subscribeTypeDetail.getId());
 
-        partialUpdatedSubscribeTypeDetail.price(UPDATED_PRICE).maxItems(UPDATED_MAX_ITEMS).maxNumberView(UPDATED_MAX_NUMBER_VIEW);
+        partialUpdatedSubscribeTypeDetail.price(UPDATED_PRICE);
 
         restSubscribeTypeDetailMockMvc
             .perform(

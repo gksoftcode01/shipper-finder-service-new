@@ -114,7 +114,12 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a UserSubscribe', async () => {
-        const patchObject = { fromDate: dayjs(currentDate).format(DATE_TIME_FORMAT), ...new UserSubscribe() };
+        const patchObject = {
+          fromDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
+          toDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
+          subscribedUserEncId: 'BBBBBB',
+          ...new UserSubscribe(),
+        };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { fromDate: currentDate, toDate: currentDate, ...returnedFromService };

@@ -986,9 +986,11 @@ class SubscribeTypeResourceIT {
         partialUpdatedSubscribeType.setId(subscribeType.getId());
 
         partialUpdatedSubscribeType
-            .type(UPDATED_TYPE)
+            .nameEn(UPDATED_NAME_EN)
             .nameAr(UPDATED_NAME_AR)
+            .nameDe(UPDATED_NAME_DE)
             .nameUrdu(UPDATED_NAME_URDU)
+            .details(UPDATED_DETAILS)
             .detailsFr(UPDATED_DETAILS_FR)
             .detailsUrdu(UPDATED_DETAILS_URDU);
 

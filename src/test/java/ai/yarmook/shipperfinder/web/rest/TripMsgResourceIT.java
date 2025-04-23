@@ -544,7 +544,7 @@ class TripMsgResourceIT {
         TripMsg partialUpdatedTripMsg = new TripMsg();
         partialUpdatedTripMsg.setId(tripMsg.getId());
 
-        partialUpdatedTripMsg.fromUserEncId(UPDATED_FROM_USER_ENC_ID).toUserEncId(UPDATED_TO_USER_ENC_ID);
+        partialUpdatedTripMsg.msg(UPDATED_MSG).fromUserEncId(UPDATED_FROM_USER_ENC_ID);
 
         restTripMsgMockMvc
             .perform(

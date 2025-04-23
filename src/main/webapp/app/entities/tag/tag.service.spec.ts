@@ -104,7 +104,7 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a Tag', async () => {
-        const patchObject = { nameAr: 'BBBBBB', nameFr: 'BBBBBB', nameDe: 'BBBBBB', ...new Tag() };
+        const patchObject = { name: 'BBBBBB', nameAr: 'BBBBBB', nameUrdu: 'BBBBBB', iconUrl: 'BBBBBB', ...new Tag() };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { ...returnedFromService };

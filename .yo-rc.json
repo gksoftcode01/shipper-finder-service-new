@@ -35,7 +35,8 @@
       "CargoRequestItem",
       "ShowNumberHistory",
       "TripMsg",
-      "CargoMsg"
+      "CargoMsg",
+      "OtpLog"
     ],
     "gitCompany": "",
     "iaCTools": ["bicep", "terraform"],
@@ -43,7 +44,7 @@
     "jhipsterVersion": "8.9.0",
     "jwtSecretKey": "YjQzNmQ4YjE4NWI0MjhkZDU1NTRmY2E2YWIxZmZlMzUwYzAzNjFkNGI2YTY0OTNmZWNiNjM2N2RiZjQ5OWI0MmI0YmJjOWM0M2M1NDc2Y2YzYmI3NTYyN2RhMzkyOGM3OTIwZjU2MGZmNmIyYjEyZTQ2OGFhNzM5MzdkZmQwZmE=",
     "languages": ["en", "ar-ly"],
-    "lastLiquibaseTimestamp": 1740424008000,
+    "lastLiquibaseTimestamp": 1744747986000,
     "messageBroker": "kafka",
     "nativeLanguage": "en",
     "packageFolder": "ai/yarmook/shipperfinder",

@@ -548,7 +548,7 @@ class UserSubscribeResourceIT {
         UserSubscribe partialUpdatedUserSubscribe = new UserSubscribe();
         partialUpdatedUserSubscribe.setId(userSubscribe.getId());
 
-        partialUpdatedUserSubscribe.fromDate(UPDATED_FROM_DATE).toDate(UPDATED_TO_DATE).subscribedUserEncId(UPDATED_SUBSCRIBED_USER_ENC_ID);
+        partialUpdatedUserSubscribe.toDate(UPDATED_TO_DATE).subscribedUserEncId(UPDATED_SUBSCRIBED_USER_ENC_ID);
 
         restUserSubscribeMockMvc
             .perform(

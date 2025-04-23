@@ -95,29 +95,29 @@ spring:
     exclude: org.springframework.boot.actuate.autoconfigure.metrics.jdbc.DataSourcePoolMetricsAutoConfiguration
   application:
     name: ShipperFinder
-  cloud:
-    function:
-      definition: kafkaConsumer;kafkaProducer
-    stream:
-      kafka:
-        binder:
-          replicationFactor: 1
-          auto-create-topics: true
-          brokers: localhost:9092
-      bindings:
-        binding-out-0:
-          content-type: text/plain
-          group: shipper-finder
-        kafkaConsumer-in-0:
-          destination: sse-topic
-          content-type: text/plain
-          group: shipper-finder
-        kafkaProducer-out-0:
-          content-type: text/plain
-          group: shipper-finder
+  #  cloud:
+  #    function:
+  #      definition: kafkaConsumer;kafkaProducer
+  #    stream:
+  #      kafka:
+  #        binder:
+  #          replicationFactor: 1
+  #          auto-create-topics: true
+  #          brokers: localhost:9092
+  #      bindings:
+  #        binding-out-0:
+  #          content-type: text/plain
+  #          group: shipper-finder
+  #        kafkaConsumer-in-0:
+  #          destination: sse-topic
+  #          content-type: text/plain
+  #          group: shipper-finder
+  #        kafkaProducer-out-0:
+  #          content-type: text/plain
+  #          group: shipper-finder
   docker:
     compose:
-      enabled: true
+      enabled: false
       lifecycle-management: start-only
       file: src/main/docker/services.yml
   profiles:
@@ -246,3 +246,24 @@ jhipster:
 # ===================================================================
 
 # application:
+ai:
+  yarmook:
+    otp:
+      max_tries: ${OTP_MAX_TRIES:3}
+      exp_duration: ${OTP_EXP_DURATION:3}
+      max_per_day: ${OTP_MAX_PER_DAY:3}
+      digit_size: ${OTP_DIGIT_SIZE:6}
+    subscribeType:
+      defaultPeriod:
+        normal: ${DEFAULT_PERIOD_NORMAL:30}
+    msg91:
+      url: https://control.msg91.com/api/v5/flow
+      templateId: ${MSG91_TEMPLATE_ID:67fd6a3cd6fc05696355e253}
+      authkey: ${MSG91_AUTHKEY:439169AuCpGU2Qc67f1a0dfP1}
+    twilio:
+      service:
+        sid: ${TWILIO_SERVICE_SID:VA03c8d61defa9fe151020dd2890693668}
+        profile: ${TWILIO_PROFILE:dev}
+      account:
+        sid: ${TWILIO_ACCOUNT_SID:AC340e7a8b37179ddfd555988b70aa76ae}
+        token: ${TWILIO_TOKEN_SID:52494fad432e29680247a018b421e9ef}

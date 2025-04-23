@@ -674,7 +674,7 @@ class UnitResourceIT {
         Unit partialUpdatedUnit = new Unit();
         partialUpdatedUnit.setId(unit.getId());
 
-        partialUpdatedUnit.name(UPDATED_NAME).nameAr(UPDATED_NAME_AR).nameDe(UPDATED_NAME_DE);
+        partialUpdatedUnit.nameAr(UPDATED_NAME_AR);
 
         restUnitMockMvc
             .perform(

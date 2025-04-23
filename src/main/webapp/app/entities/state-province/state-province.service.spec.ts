@@ -95,7 +95,7 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a StateProvince', async () => {
-        const patchObject = { ...new StateProvince() };
+        const patchObject = { name: 'BBBBBB', localName: 'BBBBBB', isoCode: 'BBBBBB', ...new StateProvince() };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { ...returnedFromService };

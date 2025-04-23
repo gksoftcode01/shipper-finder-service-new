@@ -549,7 +549,10 @@ class ShowNumberHistoryResourceIT {
         ShowNumberHistory partialUpdatedShowNumberHistory = new ShowNumberHistory();
         partialUpdatedShowNumberHistory.setId(showNumberHistory.getId());
 
-        partialUpdatedShowNumberHistory.createdDate(UPDATED_CREATED_DATE).entityEncId(UPDATED_ENTITY_ENC_ID);
+        partialUpdatedShowNumberHistory
+            .actionByEncId(UPDATED_ACTION_BY_ENC_ID)
+            .entityType(UPDATED_ENTITY_TYPE)
+            .entityEncId(UPDATED_ENTITY_ENC_ID);
 
         restShowNumberHistoryMockMvc
             .perform(

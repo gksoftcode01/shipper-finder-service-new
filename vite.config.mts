@@ -1,12 +1,14 @@
 import { URL, fileURLToPath } from 'node:url';
 import { defineConfig, normalizePath } from 'vite';
+import { normalize } from 'upath';
 
 import vue from '@vitejs/plugin-vue';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const { getAbsoluteFSPath } = await import('swagger-ui-dist');
 const swaggerUiPath = getAbsoluteFSPath();
-
+console.log('1');
+console.log(swaggerUiPath);
 // eslint-disable-next-line prefer-const
 const config = defineConfig({
   plugins: [

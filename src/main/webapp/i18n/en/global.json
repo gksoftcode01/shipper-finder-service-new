@@ -28,7 +28,8 @@
         "cargoRequestItem": "Cargo Request Item",
         "showNumberHistory": "Show Number History",
         "tripMsg": "Trip Msg",
-        "cargoMsg": "Cargo Msg"
+        "cargoMsg": "Cargo Msg",
+        "otpLog": "Otp Log"
       },
       "account": {
         "main": "Account",

@@ -317,9 +317,7 @@ class ReportAbuseResourceIT {
 
         partialUpdatedReportAbuse
             .reportByEncId(UPDATED_REPORT_BY_ENC_ID)
-            .reportedAgainstEncId(UPDATED_REPORTED_AGAINST_ENC_ID)
             .reportDate(UPDATED_REPORT_DATE)
-            .reportData(UPDATED_REPORT_DATA)
             .reportStatus(UPDATED_REPORT_STATUS);
 
         restReportAbuseMockMvc

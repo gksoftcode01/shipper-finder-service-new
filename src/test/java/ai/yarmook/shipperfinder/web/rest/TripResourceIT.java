@@ -865,11 +865,11 @@ class TripResourceIT {
         partialUpdatedTrip.setId(trip.getId());
 
         partialUpdatedTrip
-            .arriveDate(UPDATED_ARRIVE_DATE)
-            .maxWeight(UPDATED_MAX_WEIGHT)
+            .tripDate(UPDATED_TRIP_DATE)
+            .notes(UPDATED_NOTES)
             .createDate(UPDATED_CREATE_DATE)
-            .status(UPDATED_STATUS)
-            .createdByEncId(UPDATED_CREATED_BY_ENC_ID);
+            .isNegotiate(UPDATED_IS_NEGOTIATE)
+            .status(UPDATED_STATUS);
 
         restTripMockMvc
             .perform(

@@ -554,7 +554,7 @@ class StateProvinceResourceIT {
         StateProvince partialUpdatedStateProvince = new StateProvince();
         partialUpdatedStateProvince.setId(stateProvince.getId());
 
-        partialUpdatedStateProvince.name(UPDATED_NAME).localName(UPDATED_LOCAL_NAME);
+        partialUpdatedStateProvince.name(UPDATED_NAME);
 
         restStateProvinceMockMvc
             .perform(

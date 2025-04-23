@@ -1,0 +1,64 @@
+{
+  "annotations": {
+    "changelogDate": "20250415201306",
+    "filter": true,
+    "skipClient": true
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "mobileNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "otpValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "Instant",
+      "options": {
+        "defaultValueComputed": "NOW()"
+      }
+    },
+    {
+      "fieldName": "sendDate",
+      "fieldType": "Instant",
+      "options": {
+        "defaultValueComputed": "NOW()"
+      }
+    },
+    {
+      "fieldName": "delivered",
+      "fieldType": "Integer",
+      "options": {
+        "defaultValue": "0"
+      }
+    },
+    {
+      "fieldName": "verified",
+      "fieldType": "Integer",
+      "options": {
+        "defaultValue": "0"
+      }
+    },
+    {
+      "fieldName": "triesCount",
+      "fieldType": "Integer",
+      "options": {
+        "defaultValue": "0"
+      }
+    },
+    {
+      "fieldName": "response",
+      "fieldType": "String"
+    }
+  ],
+  "name": "OtpLog",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

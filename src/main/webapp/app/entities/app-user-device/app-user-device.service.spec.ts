@@ -106,7 +106,12 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a AppUserDevice', async () => {
-        const patchObject = { deviceCode: 'BBBBBB', active: true, userEncId: 'BBBBBB', ...new AppUserDevice() };
+        const patchObject = {
+          notificationToken: 'BBBBBB',
+          lastLogin: dayjs(currentDate).format(DATE_TIME_FORMAT),
+          active: true,
+          ...new AppUserDevice(),
+        };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { lastLogin: currentDate, ...returnedFromService };

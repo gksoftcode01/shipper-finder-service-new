@@ -103,7 +103,7 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a Unit', async () => {
-        const patchObject = { nameEn: 'BBBBBB', nameAr: 'BBBBBB', nameFr: 'BBBBBB', nameUrdu: 'BBBBBB', ...new Unit() };
+        const patchObject = { nameEn: 'BBBBBB', nameAr: 'BBBBBB', nameUrdu: 'BBBBBB', ...new Unit() };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { ...returnedFromService };

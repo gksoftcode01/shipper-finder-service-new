@@ -95,7 +95,7 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a SubscribeTypeDetail', async () => {
-        const patchObject = { maxRequest: 1, ...new SubscribeTypeDetail() };
+        const patchObject = { maxTrip: 1, maxRequest: 1, maxNumberView: 1, ...new SubscribeTypeDetail() };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { ...returnedFromService };

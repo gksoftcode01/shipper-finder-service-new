@@ -106,7 +106,12 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a UserRate', async () => {
-        const patchObject = { rate: 1, ratedByEncId: 'BBBBBB', ...new UserRate() };
+        const patchObject = {
+          rateDate: dayjs(currentDate).format(DATE_TIME_FORMAT),
+          ratedByEncId: 'BBBBBB',
+          ratedEncId: 'BBBBBB',
+          ...new UserRate(),
+        };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { rateDate: currentDate, ...returnedFromService };

@@ -319,7 +319,7 @@ class TagResourceIT {
         Tag partialUpdatedTag = new Tag();
         partialUpdatedTag.setId(tag.getId());
 
-        partialUpdatedTag.nameUrdu(UPDATED_NAME_URDU);
+        partialUpdatedTag.nameEn(UPDATED_NAME_EN).nameAr(UPDATED_NAME_AR).nameUrdu(UPDATED_NAME_URDU).iconUrl(UPDATED_ICON_URL);
 
         restTagMockMvc
             .perform(

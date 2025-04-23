@@ -118,7 +118,14 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a CargoRequest', async () => {
-        const patchObject = { status: 'BBBBBB', isNegotiable: true, createdByEncId: 'BBBBBB', encId: 'BBBBBB', ...new CargoRequest() };
+        const patchObject = {
+          status: 'BBBBBB',
+          isNegotiable: true,
+          budget: 1,
+          takenByEncId: 'BBBBBB',
+          encId: 'BBBBBB',
+          ...new CargoRequest(),
+        };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { createDate: currentDate, validUntil: currentDate, ...returnedFromService };

@@ -95,7 +95,7 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a TripItem', async () => {
-        const patchObject = { ...new TripItem() };
+        const patchObject = { itemPrice: 1, maxQty: 1, ...new TripItem() };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { ...returnedFromService };

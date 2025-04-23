@@ -104,7 +104,7 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a ItemType', async () => {
-        const patchObject = { name: 'BBBBBB', nameFr: 'BBBBBB', nameDe: 'BBBBBB', ...new ItemType() };
+        const patchObject = { name: 'BBBBBB', nameAr: 'BBBBBB', nameDe: 'BBBBBB', isActive: true, ...new ItemType() };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { ...returnedFromService };

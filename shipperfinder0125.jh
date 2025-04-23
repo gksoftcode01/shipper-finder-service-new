@@ -205,6 +205,20 @@ entity CargoMsg {
     toUserEncId UUID
     cargoRequestId Long
 }
+
+@filter
+@skipClient
+entity OtpLog{
+  mobileNumber String required
+  otpValue String
+  @defaultValueComputed("NOW()") createdDate Instant
+  @defaultValueComputed("NOW()") sendDate Instant
+  @defaultValue("0") delivered Integer
+  @defaultValue("0") verified Integer
+  @defaultValue("0") triesCount Integer
+  response String
+}
+
 relationship OneToOne {
     @OnDelete("CASCADE") SubscribeTypeDetail{subscribeType(nameEn)} to SubscribeType
 }

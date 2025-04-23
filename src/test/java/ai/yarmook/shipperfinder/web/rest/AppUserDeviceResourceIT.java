@@ -590,10 +590,7 @@ class AppUserDeviceResourceIT {
         AppUserDevice partialUpdatedAppUserDevice = new AppUserDevice();
         partialUpdatedAppUserDevice.setId(appUserDevice.getId());
 
-        partialUpdatedAppUserDevice
-            .deviceCode(UPDATED_DEVICE_CODE)
-            .notificationToken(UPDATED_NOTIFICATION_TOKEN)
-            .userEncId(UPDATED_USER_ENC_ID);
+        partialUpdatedAppUserDevice.userEncId(UPDATED_USER_ENC_ID);
 
         restAppUserDeviceMockMvc
             .perform(

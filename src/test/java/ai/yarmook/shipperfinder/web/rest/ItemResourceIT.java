@@ -827,12 +827,7 @@ class ItemResourceIT {
         Item partialUpdatedItem = new Item();
         partialUpdatedItem.setId(item.getId());
 
-        partialUpdatedItem
-            .nameAr(UPDATED_NAME_AR)
-            .nameFr(UPDATED_NAME_FR)
-            .nameDe(UPDATED_NAME_DE)
-            .nameUrdu(UPDATED_NAME_URDU)
-            .defaultUOM(UPDATED_DEFAULT_UOM);
+        partialUpdatedItem.nameEn(UPDATED_NAME_EN).nameAr(UPDATED_NAME_AR).nameFr(UPDATED_NAME_FR).nameUrdu(UPDATED_NAME_URDU);
 
         restItemMockMvc
             .perform(

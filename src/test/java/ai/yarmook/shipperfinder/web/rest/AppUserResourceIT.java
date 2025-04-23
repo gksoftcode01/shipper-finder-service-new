@@ -989,10 +989,11 @@ class AppUserResourceIT {
         partialUpdatedAppUser.setId(appUser.getId());
 
         partialUpdatedAppUser
+            .phoneNumber(UPDATED_PHONE_NUMBER)
             .mobileNumber(UPDATED_MOBILE_NUMBER)
-            .isVerified(UPDATED_IS_VERIFIED)
+            .userId(UPDATED_USER_ID)
             .firstName(UPDATED_FIRST_NAME)
-            .lastName(UPDATED_LAST_NAME);
+            .encId(UPDATED_ENC_ID);
 
         restAppUserMockMvc
             .perform(

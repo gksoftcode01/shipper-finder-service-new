@@ -738,13 +738,7 @@ class ItemTypeResourceIT {
         ItemType partialUpdatedItemType = new ItemType();
         partialUpdatedItemType.setId(itemType.getId());
 
-        partialUpdatedItemType
-            .nameEn(UPDATED_NAME_EN)
-            .nameAr(UPDATED_NAME_AR)
-            .nameFr(UPDATED_NAME_FR)
-            .nameDe(UPDATED_NAME_DE)
-            .nameUrdu(UPDATED_NAME_URDU)
-            .isActive(UPDATED_IS_ACTIVE);
+        partialUpdatedItemType.name(UPDATED_NAME).nameEn(UPDATED_NAME_EN).nameUrdu(UPDATED_NAME_URDU).isActive(UPDATED_IS_ACTIVE);
 
         restItemTypeMockMvc
             .perform(

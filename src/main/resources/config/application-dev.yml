@@ -29,7 +29,7 @@ spring:
       enabled: false # we use Webpack dev server + BrowserSync for livereload
   docker:
     compose:
-      enabled: true
+      enabled: false
       profiles:
         active: dev
   jackson:
@@ -47,6 +47,10 @@ spring:
     console:
       # JHipster uses a custom h2-console initializer
       enabled: true
+  elasticsearch:
+    uris: https://185.207.251.207:9200
+    username: elastic
+    password: Y@rm00k23
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker

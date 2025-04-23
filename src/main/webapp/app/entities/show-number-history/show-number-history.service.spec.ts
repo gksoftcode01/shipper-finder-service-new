@@ -105,7 +105,7 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a ShowNumberHistory', async () => {
-        const patchObject = { createdDate: dayjs(currentDate).format(DATE_TIME_FORMAT), ...new ShowNumberHistory() };
+        const patchObject = { entityType: 1, ...new ShowNumberHistory() };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { createdDate: currentDate, ...returnedFromService };

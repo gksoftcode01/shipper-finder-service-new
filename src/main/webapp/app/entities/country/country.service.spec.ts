@@ -122,9 +122,9 @@ describe('Service Tests', () => {
 
       it('should partial update a Country', async () => {
         const patchObject = {
-          localName: 'BBBBBB',
+          iso2: 'BBBBBB',
           numericCode: 'BBBBBB',
-          phoneCode: 'BBBBBB',
+          currency: 'BBBBBB',
           currencyName: 'BBBBBB',
           emoji: 'BBBBBB',
           ...new Country(),

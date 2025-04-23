@@ -826,10 +826,13 @@ class CargoRequestResourceIT {
         partialUpdatedCargoRequest.setId(cargoRequest.getId());
 
         partialUpdatedCargoRequest
+            .createDate(UPDATED_CREATE_DATE)
+            .validUntil(UPDATED_VALID_UNTIL)
             .isNegotiable(UPDATED_IS_NEGOTIABLE)
             .budget(UPDATED_BUDGET)
             .createdByEncId(UPDATED_CREATED_BY_ENC_ID)
-            .takenByEncId(UPDATED_TAKEN_BY_ENC_ID);
+            .takenByEncId(UPDATED_TAKEN_BY_ENC_ID)
+            .encId(UPDATED_ENC_ID);
 
         restCargoRequestMockMvc
             .perform(

@@ -609,8 +609,6 @@ class TripItemResourceIT {
         TripItem partialUpdatedTripItem = new TripItem();
         partialUpdatedTripItem.setId(tripItem.getId());
 
-        partialUpdatedTripItem.itemPrice(UPDATED_ITEM_PRICE);
-
         restTripItemMockMvc
             .perform(
                 patch(ENTITY_API_URL_ID, partialUpdatedTripItem.getId())

@@ -95,7 +95,7 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a TripMsg', async () => {
-        const patchObject = { msg: 'BBBBBB', toUserEncId: 'BBBBBB', tripId: 1, ...new TripMsg() };
+        const patchObject = { msg: 'BBBBBB', tripId: 1, ...new TripMsg() };
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = { ...returnedFromService };

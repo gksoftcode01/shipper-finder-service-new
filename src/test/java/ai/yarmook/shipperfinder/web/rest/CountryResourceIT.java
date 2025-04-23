@@ -989,9 +989,11 @@ class CountryResourceIT {
         partialUpdatedCountry.setId(country.getId());
 
         partialUpdatedCountry
+            .iso2(UPDATED_ISO_2)
+            .iso3(UPDATED_ISO_3)
+            .numericCode(UPDATED_NUMERIC_CODE)
             .currency(UPDATED_CURRENCY)
-            .currencySymbol(UPDATED_CURRENCY_SYMBOL)
-            .emoji(UPDATED_EMOJI)
+            .currencyName(UPDATED_CURRENCY_NAME)
             .emojiU(UPDATED_EMOJI_U);
 
         restCountryMockMvc
